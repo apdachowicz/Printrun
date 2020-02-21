@@ -34,6 +34,7 @@ if __name__ == "__main__":
             "  -c, --conf, --config=CONFIG_FILE\tLoad this file on startup instead of .pronsolerc; you may chain config files, if so settings auto-save will use the last specified file\n"+\
             "  -e, --execute=COMMAND\t\tExecutes command after configuration/.pronsolerc is loaded; macros/settings from these commands are not autosaved"
 
+    # hi
     try:
         opts, args = getopt.getopt(sys.argv[1:], "hVvc:e:", ["help", "version", "verbose", "conf=", "config=", "execute="])
     except getopt.GetoptError as err:
